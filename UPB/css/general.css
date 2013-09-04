@@ -1,0 +1,74 @@
+/* line 10, general.sass */
+
+body {
+  background: #eeffff;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* line 14, general.sass */
+
+a {
+  text-decoration: none;
+}
+
+/* line 17, general.sass */
+
+.texto_al_centro {
+  text-align: center;
+}
+
+/* line 20, general.sass */
+
+.alCien {
+  width: 99%;
+}
+
+/* line 23, general.sass */
+
+.centrado {
+  margin: 0 auto;
+}
+
+/* line 26, general.sass */
+
+.color {
+  border: 1px solid red;
+}
+
+/* line 29, general.sass */
+
+#menu {
+  width: 80%;
+}
+
+/* line 31, general.sass */
+
+#menu li {
+  display: inline-block;
+}
+
+/* line 33, general.sass */
+
+#menu li a {
+  display: inline-block;
+  color: #c6cfd3;
+  font-weight: bold;
+  padding: 1em;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+/* line 39, general.sass */
+
+#menu li a span {
+  color: #f2c312;
+}
+
+/* line 41, general.sass */
+
+#menu li a:hover {
+  -webkit-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+  color: #718791;
+}

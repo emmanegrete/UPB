@@ -1,0 +1,43 @@
+@import "compass"
+
+$amarillo: #f2c312
+$gris: #c6cfd3
+$azlMarino: #3e527b
+$padd-grd: 20em
+$padd_med: 10em
+$padd_chi: 1em
+
+body
+  background: #eff
+  font-family: 'Ubuntu', sans-serif
+
+a
+  text-decoration: none
+
+.texto_al_centro
+  text-align: center
+
+.alCien
+  width: 99%
+
+.centrado
+  margin: 0 auto
+
+.color
+  border: 1px solid red
+
+#menu
+  width: 80%
+  li
+    display: inline-block
+  li a
+    display: inline-block
+    color: $gris
+    font-weight: bold
+    padding: $padd_chi
+    +transition(all .4s linear)
+    span
+      color: $amarillo
+    &:hover
+      +scale(1.2)
+      color: scale-lightness($gris, -37%)
