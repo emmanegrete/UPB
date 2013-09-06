@@ -1,74 +1,97 @@
-/* line 10, general.sass */
+/* line 15, general.sass */
 
 body {
-  background: #eeffff;
+  background: url(../img/background.png);
   font-family: "Ubuntu", sans-serif;
 }
 
-/* line 14, general.sass */
+/* line 19, general.sass */
+
+footer {
+  bottom: 0;
+}
+
+/* line 22, general.sass */
 
 a {
   text-decoration: none;
 }
 
-/* line 17, general.sass */
+/* line 25, general.sass */
 
 .texto_al_centro {
   text-align: center;
 }
 
-/* line 20, general.sass */
+/* line 28, general.sass */
 
 .alCien {
   width: 99%;
 }
 
-/* line 23, general.sass */
+/* line 31, general.sass */
 
 .centrado {
   margin: 0 auto;
 }
 
-/* line 26, general.sass */
+/* line 34, general.sass */
 
 .color {
   border: 1px solid red;
 }
 
-/* line 29, general.sass */
+/* line 37, general.sass */
 
 #menu {
   width: 80%;
 }
 
-/* line 31, general.sass */
+/* line 39, general.sass */
 
 #menu li {
   display: inline-block;
 }
 
-/* line 33, general.sass */
+/* line 41, general.sass */
 
 #menu li a {
   display: inline-block;
   color: #c6cfd3;
   font-weight: bold;
-  padding: 1em;
+  padding: 0.5em;
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
 }
 
-/* line 39, general.sass */
+/* line 47, general.sass */
 
 #menu li a span {
   color: #f2c312;
 }
 
-/* line 41, general.sass */
+/* line 49, general.sass */
 
 #menu li a:hover {
-  -webkit-transform: scale(1.2, 1.2);
-  -ms-transform: scale(1.2, 1.2);
-  transform: scale(1.2, 1.2);
-  color: #718791;
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  color: #dbe1e3;
+}
+
+/* line 53, general.sass */
+
+#trianguloAbajo {
+  background: url("../img/trianguloAmarillo_UPB_mobil.png") center no-repeat;
+  width: auto;
+  min-height: 130px;
+}
+
+@media (min-width: 1200px) {
+  /* line 60, general.sass */
+
+  #trianguloAbajo {
+    background: url("../img/trianguloAmarillo_UPB.png") center no-repeat;
+    min-height: 180px;
+  }
 }

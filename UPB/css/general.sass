@@ -3,13 +3,21 @@
 $amarillo: #f2c312
 $gris: #c6cfd3
 $azlMarino: #3e527b
-$padd-grd: 20em
-$padd_med: 10em
-$padd_chi: 1em
+$padd_grd: 10em
+$padd_med: 5em
+$padd_chi: 0.8em
+$padd_mini: 0.5em
+
+%triangulote
+  background: url('../img/trianguloAmarillo_UPB.png') center no-repeat
+  min-height: 180px
 
 body
-  background: #eff
+  background: url(../img/background.png)
   font-family: 'Ubuntu', sans-serif
+
+footer
+  bottom: 0
 
 a
   text-decoration: none
@@ -34,10 +42,26 @@ a
     display: inline-block
     color: $gris
     font-weight: bold
-    padding: $padd_chi
+    padding: $padd_mini
     +transition(all .4s linear)
     span
       color: $amarillo
     &:hover
-      +scale(1.2)
-      color: scale-lightness($gris, -37%)
+      +scale(1.1)
+      color: scale-lightness($gris, 37%)
+
+#trianguloAbajo
+  background: url('../img/trianguloAmarillo_UPB_mobil.png') center no-repeat
+  width: auto
+  min-height: 130px
+
+
+@media (min-width: 1200px)
+  #trianguloAbajo
+    background: url('../img/trianguloAmarillo_UPB.png') center no-repeat
+    min-height: 180px
+
+@media (min-width: 768px) and (max-width: 979px)
+
+@media (max-width: 767px)
+     
