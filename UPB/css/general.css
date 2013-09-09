@@ -1,86 +1,148 @@
-/* line 15, general.sass */
-
+/* line 18, general.sass */
 body {
   background: url(../img/background.png);
   font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  line-height: 0%;
 }
 
-/* line 19, general.sass */
-
+/* line 24, general.sass */
 footer {
   bottom: 0;
 }
 
-/* line 22, general.sass */
-
+/* line 27, general.sass */
 a {
   text-decoration: none;
 }
 
-/* line 25, general.sass */
-
-.texto_al_centro {
-  text-align: center;
+/* line 30, general.sass */
+.alVeinte {
+  width: 99%;
 }
 
-/* line 28, general.sass */
+/* line 32, general.sass */
+.alTreinta {
+  width: 99%;
+}
 
+/* line 34, general.sass */
+.alCuarenta {
+  width: 99%;
+}
+
+/* line 36, general.sass */
+.alCincuenta {
+  width: 99%;
+}
+
+/* line 38, general.sass */
+.alSesenta {
+  width: 99%;
+}
+
+/* line 40, general.sass */
+.alSetenta {
+  width: 99%;
+}
+
+/* line 42, general.sass */
+.alOchenta {
+  width: 99%;
+}
+
+/* line 44, general.sass */
+.alNoventa {
+  width: 99%;
+}
+
+/* line 46, general.sass */
 .alCien {
   width: 99%;
 }
 
-/* line 31, general.sass */
-
+/* line 49, general.sass */
 .centrado {
   margin: 0 auto;
 }
 
-/* line 34, general.sass */
-
+/* line 52, general.sass */
 .color {
   border: 1px solid red;
 }
 
-/* line 37, general.sass */
+/* line 55, general.sass */
+.letra_grd {
+  font-size: 8em;
+}
 
+/* line 58, general.sass */
+.letra_mediana {
+  font-size: 2em;
+}
+
+/* line 61, general.sass */
 #menu {
   width: 80%;
 }
-
-/* line 39, general.sass */
-
+/* line 63, general.sass */
 #menu li {
   display: inline-block;
 }
-
-/* line 41, general.sass */
-
+/* line 65, general.sass */
 #menu li a {
   display: inline-block;
   color: #c6cfd3;
   font-weight: bold;
-  padding: 0.5em;
+  padding: 1em;
   -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
   transition: all 0.4s linear;
 }
-
-/* line 47, general.sass */
-
+/* line 71, general.sass */
 #menu li a span {
   color: #f2c312;
 }
-
-/* line 49, general.sass */
-
+/* line 73, general.sass */
 #menu li a:hover {
   -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
   -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
   color: #dbe1e3;
 }
 
-/* line 53, general.sass */
+/* line 77, general.sass */
+.mi_alineacion {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
+/* line 81, general.sass */
+.negrita {
+  font-weight: bold;
+}
+
+/* line 84, general.sass */
+.texto_al_centro {
+  text-align: center;
+}
+
+/* line 87, general.sass */
+.alinear_ala_dere {
+  text-align: right;
+}
+
+/* line 90, general.sass */
+.tipos_amarillo {
+  color: #f2c312;
+}
+
+/* line 93, general.sass */
 #trianguloAbajo {
   background: url("../img/trianguloAmarillo_UPB_mobil.png") center no-repeat;
   width: auto;
@@ -88,10 +150,100 @@ a {
 }
 
 @media (min-width: 1200px) {
-  /* line 60, general.sass */
-
+  /* line 100, general.sass */
   #trianguloAbajo {
     background: url("../img/trianguloAmarillo_UPB.png") center no-repeat;
     min-height: 180px;
+  }
+
+  /* line 103, general.sass */
+  .alVeinte {
+    width: 19%;
+  }
+
+  /* line 105, general.sass */
+  .alTreinta {
+    width: 29%;
+  }
+
+  /* line 107, general.sass */
+  .alCuarenta {
+    width: 39%;
+  }
+
+  /* line 109, general.sass */
+  .alCincuenta {
+    width: 49%;
+  }
+
+  /* line 111, general.sass */
+  .alSesenta {
+    width: 59%;
+  }
+
+  /* line 113, general.sass */
+  .alSetenta {
+    width: 68%;
+  }
+
+  /* line 115, general.sass */
+  .alOchenta {
+    width: 79%;
+  }
+
+  /* line 117, general.sass */
+  .alNoventa {
+    width: 89%;
+  }
+
+  /* line 119, general.sass */
+  .alCien {
+    width: 99%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 123, general.sass */
+  .alVeinte {
+    width: 19%;
+  }
+
+  /* line 125, general.sass */
+  .alTreinta {
+    width: 29%;
+  }
+
+  /* line 127, general.sass */
+  .alCuarenta {
+    width: 39%;
+  }
+
+  /* line 129, general.sass */
+  .alCincuenta {
+    width: 49%;
+  }
+
+  /* line 131, general.sass */
+  .alSesenta {
+    width: 59%;
+  }
+
+  /* line 133, general.sass */
+  .alSetenta {
+    width: 68%;
+  }
+
+  /* line 135, general.sass */
+  .alOchenta {
+    width: 79%;
+  }
+
+  /* line 137, general.sass */
+  .alNoventa {
+    width: 89%;
+  }
+
+  /* line 139, general.sass */
+  .alCien {
+    width: 99%;
   }
 }

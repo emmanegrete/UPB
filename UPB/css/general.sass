@@ -1,12 +1,15 @@
 @import "compass"
 
 $amarillo: #f2c312
-$gris: #c6cfd3
 $azlMarino: #3e527b
-$padd_grd: 10em
-$padd_med: 5em
-$padd_chi: 0.8em
-$padd_mini: 0.5em
+$cajas_alineadas: inline-block
+$padd_6: 8em
+$padd_5: 6em
+$padd_4: 4em
+$padd_3: 2em
+$padd_2: 1em
+$padd_1: 0.5em
+$gris: #c6cfd3
 
 %triangulote
   background: url('../img/trianguloAmarillo_UPB.png') center no-repeat
@@ -15,6 +18,8 @@ $padd_mini: 0.5em
 body
   background: url(../img/background.png)
   font-family: 'Ubuntu', sans-serif
+  font-size: 20px
+  line-height: 0%
 
 footer
   bottom: 0
@@ -22,9 +27,22 @@ footer
 a
   text-decoration: none
 
-.texto_al_centro
-  text-align: center
-
+.alVeinte
+  width: 99%
+.alTreinta
+  width: 99%
+.alCuarenta
+  width: 99%
+.alCincuenta
+  width: 99%
+.alSesenta
+  width: 99%
+.alSetenta
+  width: 99%
+.alOchenta
+  width: 99%
+.alNoventa
+  width: 99%
 .alCien
   width: 99%
 
@@ -34,21 +52,43 @@ a
 .color
   border: 1px solid red
 
+.letra_grd
+  font-size: $padd_6
+
+.letra_mediana
+  font-size: $padd_3
+
 #menu
   width: 80%
   li
-    display: inline-block
+    display: $cajas_alineadas
   li a
-    display: inline-block
+    display: $cajas_alineadas
     color: $gris
     font-weight: bold
-    padding: $padd_mini
+    padding: $padd_2
     +transition(all .4s linear)
     span
       color: $amarillo
     &:hover
       +scale(1.1)
       color: scale-lightness($gris, 37%)
+
+.mi_alineacion
+  display: $cajas_alineadas
+  +box-sizing(border-box)
+
+.negrita
+  font-weight: bold
+
+.texto_al_centro
+  text-align: center
+
+.alinear_ala_dere
+  text-align: right
+
+.tipos_amarillo
+  color: $amarillo
 
 #trianguloAbajo
   background: url('../img/trianguloAmarillo_UPB_mobil.png') center no-repeat
@@ -60,8 +100,43 @@ a
   #trianguloAbajo
     background: url('../img/trianguloAmarillo_UPB.png') center no-repeat
     min-height: 180px
+  .alVeinte
+    width: 19%
+  .alTreinta
+    width: 29%
+  .alCuarenta
+    width: 39%
+  .alCincuenta
+    width: 49%
+  .alSesenta
+    width: 59%
+  .alSetenta
+    width: 68%
+  .alOchenta
+    width: 79%
+  .alNoventa
+    width: 89%
+  .alCien
+    width: 99%
 
-@media (min-width: 768px) and (max-width: 979px)
+@media (min-width: 768px) and (max-width: 1199px)
+  .alVeinte
+    width: 19%
+  .alTreinta
+    width: 29%
+  .alCuarenta
+    width: 39%
+  .alCincuenta
+    width: 49%
+  .alSesenta
+    width: 59%
+  .alSetenta
+    width: 68%
+  .alOchenta
+    width: 79%
+  .alNoventa
+    width: 89%
+  .alCien
+    width: 99%
 
-@media (max-width: 767px)
-     
+@media (min-width: 451px) and (max-width: 767px)
