@@ -10,48 +10,64 @@
     %link{:rel => "stylesheet", :href => "css/general.css"}/ 
     %link{:rel => "stylesheet", :href => "http://fonts.googleapis.com/css?family=Ubuntu:500,700"}/
   %body
-    %header.encabezadoUPB.color
-    %nav#menu.texto_al_centro.centrado.color
-      %ul
-        %li.color
-          %a{:title => "UPB Home", :href => "#Home"}  
-            %span [ 
-            Inicio 
-            %span ]
-        %li.color 
-          %a{:title => "Productos y servicios", :href => "#Productos"}  
-            %span [
-            Productos y servicios
-            %span ]
-        %li
-          %a.color{:title =>"Acerca de UPB", :href => "#AcercaUPB"}   
-            %span [
-            Acerca de UPB
-            %span ]
-        %li
-          %a{:title =>"Contacto UPB", :href => "#Contacto"}   
-            %span [
-            Contacto
-            %span ]
-        %li 
-          %a{:title =>"Ubicación UPB", :href => "#Ubicacion"}  
-            %span [
-            Ubicación
-            %span ]
-    %section.alCien.color
-      %section.alOchenta.centrado.color
-        .alCuarenta.mi_alineacion.tipos_amarillo.alinear_ala_dere.color
-          %h1.letra_grd.negrita
-            TPU
-        .alSesenta.mi_alineacion.color.tituloPoliu
-          .tipos_amarillo.letra_mediana
-            %p
-              POLIURETANO
-            %p
-              TERMOPLÁSTICO  
+    .contenedorPrincipal.color
+      %nav#menu.texto_al_centro.centrado.color.marginArriba
+        %ul
+          %li.color
+            %a.letra_chica{:title => "UPB Home", :href => "#Home"}  
+              %span [ 
+              Inicio 
+              %span ]
+          %li.color 
+            %a.letra_chica{:title => "Productos y servicios", :href => "#Productos"}  
+              %span [
+              Productos y servicios
+              %span ]
+          %li
+            %a.color.letra_chica{:title =>"Acerca de UPB", :href => "#AcercaUPB"}   
+              %span [
+              Acerca de UPB
+              %span ]
+          %li
+            %a.letra_chica{:title =>"Contacto UPB", :href => "#Contacto"}   
+              %span [
+              Contacto
+              %span ]
+          %li 
+            %a.letra_chica{:title =>"Ubicación UPB", :href => "#Ubicacion"}  
+              %span [
+              Ubicación
+              %span ]
+      %section.alCien.color
+        %section.anchoTitulo.centrado.color
+          .cajaTPU.centrado.tipos_amarillo.color.sinLine
+            %h1.letra_grd.negrita
+              TPU
+          .color.tituloPoliu.centrado
+            .tipos_amarillo.titulo_poliuretano.centrado
+              %p
+                POLIURETANO
+              %p
+                TERMOPLÁSTICO
+        %section.alCien.centrado
+          %section.centrado
+            %section.centrado.color.italiaMexico.negrita.texto_al_centro.sinLine
+              %p
+                %span 
+                  [
+                ITALIA
+                %span
+                  -
+                MÉXICO
+                %span 
+                  ]
+            %section.distribuidores.centrado.tipos_amarillo.texto_al_centro.sinLine
+              %p.sinLine DISTRIBUIDORES NACIONALES
+            %section.centrado.letra_chica.texto_al_centro.centro.color.marcaItaliana.sinLine
+              %p MARCA ITALIANA GLOBO COIM
 
-    %footer.alCien.centrado.texto_al_centro
-      %figure#trianguloAbajo
+        %section.alCien
+          .galeria.color.centrado    
     
     %script{:src => "js/jquery.js"}
     %script{:src => "js/modernizr.js"} 

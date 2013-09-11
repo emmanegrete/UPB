@@ -6,8 +6,12 @@ $cajas_alineadas: inline-block
 $padd_6: 8em
 $padd_5: 6em
 $padd_4: 4em
+$padd_3_2: 3.6em
+$padd_3_1: 3em
+$padd_3_3: 2.6em
 $padd_3: 2em
-$padd_2: 1em
+$padd_2: 1.8em
+$padd_1_1: 1em
 $padd_1: 0.5em
 $gris: #c6cfd3
 
@@ -18,8 +22,8 @@ $gris: #c6cfd3
 body
   background: url(../img/background.png)
   font-family: 'Ubuntu', sans-serif
-  font-size: 20px
-  line-height: 0%
+  font-size: 10px
+  line-height: 200%
 
 footer
   bottom: 0
@@ -27,24 +31,44 @@ footer
 a
   text-decoration: none
 
+.anchoTitulo
+  max-width: 650px
+
 .alVeinte
-  width: 99%
+  width: 99.8%
 .alTreinta
-  width: 99%
+  width: 99.8%
 .alCuarenta
-  width: 99%
+  width: 99.8%
 .alCincuenta
-  width: 99%
+  width: 99.8%
 .alSesenta
-  width: 99%
+  width: 99.8%
 .alSetenta
-  width: 99%
+  width: 99.8%
 .alOchenta
-  width: 99%
+  width: 99.8%
 .alNoventa
-  width: 99%
+  width: 99.8%
 .alCien
-  width: 99%
+  width: 99.8%
+
+.alineado_vertical
+  vertical-align: top
+
+.alinear_ala_dere
+  text-align: right
+
+.distribuidores
+  font-size: $padd_3_3
+
+.cajaTPU
+  font-size: 16px
+  font-weight: bold
+  height: auto
+  text-align: center
+  width: 250px
+  height: 200px
 
 .centrado
   margin: 0 auto
@@ -52,21 +76,46 @@ a
 .color
   border: 1px solid red
 
+.contenedorPrincipal
+  background: url('../img/inicio-UPB-poliuretanos-resinas-pigmentos-procesos-industriales.png')  top center no-repeat
+
+.galeria
+  width: 250px
+  height: 250px
+
+.italiaMexico
+  width: 250px
+  font-size: $padd_3
+  color: $gris
+  span
+    color: $amarillo
+
 .letra_grd
   font-size: $padd_6
 
 .letra_mediana
   font-size: $padd_3
 
+.letra_chica
+  font-size: $padd_2
+
+.marcaItaliana
+  background-color: $amarillo
+  +border-radius(5px)
+  width: 270px
+
+.marginArriba
+  margin-top: 15em
+
 #menu
   width: 80%
   li
     display: $cajas_alineadas
   li a
-    display: $cajas_alineadas
     color: $gris
+    display: $cajas_alineadas
     font-weight: bold
-    padding: $padd_2
+    padding: $padd_1_1
     +transition(all .4s linear)
     span
       color: $amarillo
@@ -81,25 +130,42 @@ a
 .negrita
   font-weight: bold
 
+.sinLine
+  line-height: 0%
+
 .texto_al_centro
   text-align: center
-
-.alinear_ala_dere
-  text-align: right
 
 .tipos_amarillo
   color: $amarillo
 
-#trianguloAbajo
-  background: url('../img/trianguloAmarillo_UPB_mobil.png') center no-repeat
-  width: auto
-  min-height: 130px
+.titulo_poliuretano
+  font-size: 35px
+
+.tituloPoliu
+  max-width: 320px
+  position: relative
+  top: -20px
+
 
 
 @media (min-width: 1200px)
+  .cajaTPU
+    font-size: $padd_2
+    text-align: right
+    display: inline-block
+    width: 300px
+
+  .titulo_poliuretano
+    font-size: $padd_4
+
+  .tituloPoliu
+    display: inline-block
+
   #trianguloAbajo
     background: url('../img/trianguloAmarillo_UPB.png') center no-repeat
     min-height: 180px
+
   .alVeinte
     width: 19%
   .alTreinta
@@ -120,6 +186,17 @@ a
     width: 99%
 
 @media (min-width: 768px) and (max-width: 1199px)
+  .cajaTPU
+    font-size: $padd_2
+    text-align: right
+    display: inline-block
+    width: 300px
+
+  .titulo_poliuretano
+    font-size: $padd_4
+  .tituloPoliu
+    display: inline-block
+
   .alVeinte
     width: 19%
   .alTreinta

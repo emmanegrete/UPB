@@ -1,248 +1,296 @@
-/* line 18, general.sass */
 body {
   background: url(../img/background.png);
   font-family: "Ubuntu", sans-serif;
-  font-size: 20px;
-  line-height: 0%;
+  font-size: 10px;
+  line-height: 200%;
 }
 
-/* line 24, general.sass */
 footer {
   bottom: 0;
 }
 
-/* line 27, general.sass */
 a {
   text-decoration: none;
 }
 
-/* line 30, general.sass */
+.anchoTitulo {
+  max-width: 650px;
+}
+
 .alVeinte {
-  width: 99%;
+  width: 99.8%;
 }
 
-/* line 32, general.sass */
 .alTreinta {
-  width: 99%;
+  width: 99.8%;
 }
 
-/* line 34, general.sass */
 .alCuarenta {
-  width: 99%;
+  width: 99.8%;
 }
 
-/* line 36, general.sass */
 .alCincuenta {
-  width: 99%;
+  width: 99.8%;
 }
 
-/* line 38, general.sass */
 .alSesenta {
-  width: 99%;
+  width: 99.8%;
 }
 
-/* line 40, general.sass */
 .alSetenta {
-  width: 99%;
+  width: 99.8%;
 }
 
-/* line 42, general.sass */
 .alOchenta {
-  width: 99%;
+  width: 99.8%;
 }
 
-/* line 44, general.sass */
 .alNoventa {
-  width: 99%;
+  width: 99.8%;
 }
 
-/* line 46, general.sass */
 .alCien {
-  width: 99%;
+  width: 99.8%;
 }
 
-/* line 49, general.sass */
-.centrado {
-  margin: 0 auto;
+.alineado_vertical {
+  vertical-align: top;
 }
 
-/* line 52, general.sass */
-.color {
-  border: 1px solid red;
-}
-
-/* line 55, general.sass */
-.letra_grd {
-  font-size: 8em;
-}
-
-/* line 58, general.sass */
-.letra_mediana {
-  font-size: 2em;
-}
-
-/* line 61, general.sass */
-#menu {
-  width: 80%;
-}
-/* line 63, general.sass */
-#menu li {
-  display: inline-block;
-}
-/* line 65, general.sass */
-#menu li a {
-  display: inline-block;
-  color: #c6cfd3;
-  font-weight: bold;
-  padding: 1em;
-  -webkit-transition: all 0.4s linear;
-  -moz-transition: all 0.4s linear;
-  -o-transition: all 0.4s linear;
-  transition: all 0.4s linear;
-}
-/* line 71, general.sass */
-#menu li a span {
-  color: #f2c312;
-}
-/* line 73, general.sass */
-#menu li a:hover {
-  -webkit-transform: scale(1.1, 1.1);
-  -moz-transform: scale(1.1, 1.1);
-  -ms-transform: scale(1.1, 1.1);
-  -o-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1);
-  color: #dbe1e3;
-}
-
-/* line 77, general.sass */
-.mi_alineacion {
-  display: inline-block;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* line 81, general.sass */
-.negrita {
-  font-weight: bold;
-}
-
-/* line 84, general.sass */
-.texto_al_centro {
-  text-align: center;
-}
-
-/* line 87, general.sass */
 .alinear_ala_dere {
   text-align: right;
 }
 
-/* line 90, general.sass */
+.distribuidores {
+  font-size: 2.6em;
+}
+
+.cajaTPU {
+  font-size: 16px;
+  font-weight: bold;
+  height: auto;
+  text-align: center;
+  width: 250px;
+  height: 200px;
+}
+
+.centrado {
+  margin: 0 auto;
+}
+
+.color {
+  border: 1px solid red;
+}
+
+.contenedorPrincipal {
+  background: url("../img/inicio-UPB-poliuretanos-resinas-pigmentos-procesos-industriales.png") top center no-repeat;
+}
+
+.galeria {
+  width: 250px;
+  height: 250px;
+}
+
+.italiaMexico {
+  width: 250px;
+  font-size: 2em;
+  color: #c6cfd3;
+}
+
+.italiaMexico span {
+  color: #f2c312;
+}
+
+.letra_grd {
+  font-size: 8em;
+}
+
+.letra_mediana {
+  font-size: 2em;
+}
+
+.letra_chica {
+  font-size: 1.8em;
+}
+
+.marcaItaliana {
+  background-color: #f2c312;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  width: 270px;
+}
+
+.marginArriba {
+  margin-top: 15em;
+}
+
+#menu {
+  width: 80%;
+}
+
+#menu li {
+  display: inline-block;
+}
+
+#menu li a {
+  color: #c6cfd3;
+  display: inline-block;
+  font-weight: bold;
+  padding: 1em;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+#menu li a span {
+  color: #f2c312;
+}
+
+#menu li a:hover {
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  color: #dbe1e3;
+}
+
+.mi_alineacion {
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+.sinLine {
+  line-height: 0%;
+}
+
+.texto_al_centro {
+  text-align: center;
+}
+
 .tipos_amarillo {
   color: #f2c312;
 }
 
-/* line 93, general.sass */
-#trianguloAbajo {
-  background: url("../img/trianguloAmarillo_UPB_mobil.png") center no-repeat;
-  width: auto;
-  min-height: 130px;
+.titulo_poliuretano {
+  font-size: 35px;
+}
+
+.tituloPoliu {
+  max-width: 320px;
+  position: relative;
+  top: -20px;
 }
 
 @media (min-width: 1200px) {
-  /* line 100, general.sass */
+  .cajaTPU {
+    font-size: 1.8em;
+    text-align: right;
+    display: inline-block;
+    width: 300px;
+  }
+
+  .titulo_poliuretano {
+    font-size: 4em;
+  }
+
+  .tituloPoliu {
+    display: inline-block;
+  }
+
   #trianguloAbajo {
     background: url("../img/trianguloAmarillo_UPB.png") center no-repeat;
     min-height: 180px;
   }
 
-  /* line 103, general.sass */
   .alVeinte {
     width: 19%;
   }
 
-  /* line 105, general.sass */
   .alTreinta {
     width: 29%;
   }
 
-  /* line 107, general.sass */
   .alCuarenta {
     width: 39%;
   }
 
-  /* line 109, general.sass */
   .alCincuenta {
     width: 49%;
   }
 
-  /* line 111, general.sass */
   .alSesenta {
     width: 59%;
   }
 
-  /* line 113, general.sass */
   .alSetenta {
     width: 68%;
   }
 
-  /* line 115, general.sass */
   .alOchenta {
     width: 79%;
   }
 
-  /* line 117, general.sass */
   .alNoventa {
     width: 89%;
   }
 
-  /* line 119, general.sass */
   .alCien {
     width: 99%;
   }
 }
+
 @media (min-width: 768px) and (max-width: 1199px) {
-  /* line 123, general.sass */
+  .cajaTPU {
+    font-size: 1.8em;
+    text-align: right;
+    display: inline-block;
+    width: 300px;
+  }
+
+  .titulo_poliuretano {
+    font-size: 4em;
+  }
+
+  .tituloPoliu {
+    display: inline-block;
+  }
+
   .alVeinte {
     width: 19%;
   }
 
-  /* line 125, general.sass */
   .alTreinta {
     width: 29%;
   }
 
-  /* line 127, general.sass */
   .alCuarenta {
     width: 39%;
   }
 
-  /* line 129, general.sass */
   .alCincuenta {
     width: 49%;
   }
 
-  /* line 131, general.sass */
   .alSesenta {
     width: 59%;
   }
 
-  /* line 133, general.sass */
   .alSetenta {
     width: 68%;
   }
 
-  /* line 135, general.sass */
   .alOchenta {
     width: 79%;
   }
 
-  /* line 137, general.sass */
   .alNoventa {
     width: 89%;
   }
 
-  /* line 139, general.sass */
   .alCien {
     width: 99%;
   }
