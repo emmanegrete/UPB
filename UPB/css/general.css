@@ -15,6 +15,7 @@ a {
 
 .anchoTitulo {
   max-width: 650px;
+  height: 150px;
 }
 
 .alVeinte {
@@ -71,7 +72,6 @@ a {
   height: auto;
   text-align: center;
   width: 250px;
-  height: 200px;
 }
 
 .centrado {
@@ -89,6 +89,7 @@ a {
 .galeria {
   width: 250px;
   height: 250px;
+  margin-bottom: 15em;
 }
 
 .italiaMexico {
@@ -102,7 +103,11 @@ a {
 }
 
 .letra_grd {
-  font-size: 8em;
+  font-size: 6.4em;
+}
+
+.letra_titulos {
+  font-size: 26px;
 }
 
 .letra_mediana {
@@ -137,7 +142,7 @@ a {
   color: #c6cfd3;
   display: inline-block;
   font-weight: bold;
-  padding: 1em;
+  padding: 0.5em;
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
 }
@@ -163,6 +168,15 @@ a {
   font-weight: bold;
 }
 
+.slide {
+  list-style: none outside none;
+  overflow: hidden;
+  width: 433px;
+  height: 290px;
+  padding: 0px;
+  margin: 0 0 10px;
+}
+
 .sinLine {
   line-height: 0%;
 }
@@ -175,14 +189,31 @@ a {
   color: #f2c312;
 }
 
+.tipos_azul {
+  color: #3e527b;
+}
+
 .titulo_poliuretano {
-  font-size: 35px;
+  font-size: 32px;
 }
 
 .tituloPoliu {
   max-width: 320px;
-  position: relative;
-  top: -20px;
+}
+
+.contenedorHexa {
+  background: url("../img/hexagono_grd_amarillo_UPB_poliuretano.png") center no-repeat;
+  height: 507px;
+  margin-bottom: 20em;
+  width: 449px;
+}
+
+.flechaArriba {
+  padding-top: 2em;
+}
+
+.anchoTextoHexa {
+  height: 300px;
 }
 
 @media (min-width: 1200px) {

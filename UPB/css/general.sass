@@ -4,6 +4,9 @@ $amarillo: #f2c312
 $azlMarino: #3e527b
 $cajas_alineadas: inline-block
 $padd_6: 8em
+$padd_5_2: 6.6em
+$padd_5_2: 6.4em
+$padd_5_1: 6.2em
 $padd_5: 6em
 $padd_4: 4em
 $padd_3_2: 3.6em
@@ -33,6 +36,7 @@ a
 
 .anchoTitulo
   max-width: 650px
+  height: 150px
 
 .alVeinte
   width: 99.8%
@@ -68,7 +72,6 @@ a
   height: auto
   text-align: center
   width: 250px
-  height: 200px
 
 .centrado
   margin: 0 auto
@@ -82,6 +85,7 @@ a
 .galeria
   width: 250px
   height: 250px
+  margin-bottom: 15em
 
 .italiaMexico
   width: 250px
@@ -91,7 +95,10 @@ a
     color: $amarillo
 
 .letra_grd
-  font-size: $padd_6
+  font-size: $padd_5_2
+
+.letra_titulos
+  font-size: 26px
 
 .letra_mediana
   font-size: $padd_3
@@ -115,7 +122,7 @@ a
     color: $gris
     display: $cajas_alineadas
     font-weight: bold
-    padding: $padd_1_1
+    padding: $padd_1
     +transition(all .4s linear)
     span
       color: $amarillo
@@ -130,6 +137,14 @@ a
 .negrita
   font-weight: bold
 
+.slide
+  list-style: none outside none
+  overflow: hidden
+  width: 433px
+  height: 290px
+  padding: 0px
+  margin: 0 0 10px
+
 .sinLine
   line-height: 0%
 
@@ -139,15 +154,29 @@ a
 .tipos_amarillo
   color: $amarillo
 
+.tipos_azul
+  color: $azlMarino
+
 .titulo_poliuretano
-  font-size: 35px
+  font-size: 32px
 
 .tituloPoliu
   max-width: 320px
-  position: relative
-  top: -20px
+
+//Acerca de
 
 
+.contenedorHexa
+  background: url('../img/hexagono_grd_amarillo_UPB_poliuretano.png') center no-repeat
+  height: 507px
+  margin-bottom: 20em
+  width: 449px
+
+.flechaArriba
+  padding-top: $padd_3
+
+.anchoTextoHexa
+  height: 300px
 
 @media (min-width: 1200px)
   .cajaTPU
