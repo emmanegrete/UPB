@@ -8,35 +8,35 @@
     %link{:rel => "stylesheet", :href => "css/normalize.css"}/
     %link{:href => "/favicon.ico", :rel => "shortcut icon"}/ 
     %link{:rel => "stylesheet", :href => "css/general.css"}/ 
-    %link{:rel => "stylesheet", :href => "http://fonts.googleapis.com/css?family=Ubuntu:500,700"}/
+    %link{:rel => "stylesheet", :href => "http://fonts.googleapis.com/css?family=Ubuntu:400,300,700"}/
   %body
     .contenedorPrincipal.color
       %nav#menu.texto_al_centro.centrado.color.marginArriba
         %ul
           %li.color
-            %a.letra_chica{:title => "UPB Home", :href => "#Home"}  
+            %a.letra_mini_1{:title => "UPB Home", :href => "index.html"}  
               %span [ 
-              Inicio 
+              INICIO 
               %span ]
           %li.color 
-            %a.letra_chica{:title => "Productos y servicios", :href => "#Productos"}  
+            %a.letra_mini_1{:title => "Productos y servicios", :href => "productos.html"}  
               %span [
-              Productos y servicios
+              PRODUCTOS Y SERVICIOS
               %span ]
           %li
-            %a.color.letra_chica{:title =>"Acerca de UPB", :href => "#AcercaUPB"}   
+            %a.color.letra_mini_1{:title =>"Acerca de UPB", :href => "acerca.html"}   
               %span [
-              Acerca de UPB
+              ACERCA DE UPB
               %span ]
           %li
-            %a.letra_chica{:title =>"Contacto UPB", :href => "#Contacto"}   
+            %a.letra_mini_1{:title =>"Contacto UPB", :href => "#Contacto"}   
               %span [
-              Contacto
+              CONTACTO
               %span ]
           %li 
-            %a.letra_chica{:title =>"Ubicación UPB", :href => "#Ubicacion"}  
+            %a.letra_mini_1{:title =>"Ubicación UPB", :href => "#Ubicacion"}  
               %span [
-              Ubicación
+              UBICACIÓN
               %span ]
       %section.alCien.color.cambioAjax
         %section.anchoTitulo.centrado.color
@@ -52,7 +52,7 @@
         %section.alCien.centrado
           %section.centrado
             %section.centrado.color.italiaMexico.negrita.texto_al_centro.sinLine
-              %p
+              %p.subeMargen
                 %span 
                   [
                 ITALIA
@@ -61,13 +61,13 @@
                 MÉXICO
                 %span 
                   ]
-            %section.distribuidores.centrado.tipos_amarillo.texto_al_centro.sinLine
+            %section.distribuidores.centrado.tipos_amarillo.texto_al_centro.sinLine.subeMargen
               %p.sinLine DISTRIBUIDORES NACIONALES
-            %section.centrado.letra_chica.texto_al_centro.centro.color.marcaItaliana.sinLine
-              %p MARCA ITALIANA GLOBO COIM
+            %section.centrado.letra_mini_1.texto_al_centro.centro.color.marcaItaliana.sinLine
+              %p.alineado_vertical MARCA ITALIANA GLOBO COIM
 
         %section.alCien.centrado
-          .galeria.color.centrado
+          .galeria.color.centrado.marginArriba_1
             %ul.slide.centrado
               %li 
                 %img{:src => "img/hexagonos_TPU_1.png", :alt => "TPU Poliuretano"}/ 

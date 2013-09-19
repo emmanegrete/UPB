@@ -1,8 +1,33 @@
+#menu li a,
+.menuProductos p a {
+  color: #c6cfd3;
+  display: inline-block;
+  padding: 0.5em 1em;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+#menu li a span,
+.menuProductos p a span {
+  color: #f2c312;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+#menu li a:hover,
+.menuProductos p a:hover {
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  color: #dbe1e3;
+}
+
 body {
   background: url(../img/background.png);
   font-family: "Ubuntu", sans-serif;
   font-size: 10px;
-  line-height: 200%;
+  line-height: 150%;
+  font-weight: lighter;
 }
 
 footer {
@@ -16,6 +41,10 @@ a {
 .anchoTitulo {
   max-width: 650px;
   height: 150px;
+}
+
+.anchoTextoHexa {
+  height: 310px;
 }
 
 .alVeinte {
@@ -63,7 +92,7 @@ a {
 }
 
 .distribuidores {
-  font-size: 2.6em;
+  font-size: 3em;
 }
 
 .cajaTPU {
@@ -79,11 +108,23 @@ a {
 }
 
 .color {
-  border: 1px solid red;
+  border: 1px solid transparent;
 }
 
 .contenedorPrincipal {
   background: url("../img/inicio-UPB-poliuretanos-resinas-pigmentos-procesos-industriales.png") top center no-repeat;
+}
+
+.contenedorAcerca {
+  background: url("../img/acerca-UPB-poliuretanos-resinas-pigmentos-procesos-industriales.png") top center no-repeat;
+}
+
+.contenedorProductos {
+  background: url("../img/productos-UPB-poliuretanos-resinas-pigmentos-procesos-industriales.png") top center no-repeat;
+}
+
+.con_line_height {
+  line-height: 120%;
 }
 
 .galeria {
@@ -94,7 +135,7 @@ a {
 
 .italiaMexico {
   width: 250px;
-  font-size: 2em;
+  font-size: 1.8em;
   color: #c6cfd3;
 }
 
@@ -102,20 +143,33 @@ a {
   color: #f2c312;
 }
 
-.letra_grd {
-  font-size: 6.4em;
+.letra_chica {
+  font-size: 1.8em;
 }
 
-.letra_titulos {
-  font-size: 26px;
+.letra_mini_1 {
+  font-size: 1.6em;
+}
+
+.letra_mini {
+  font-size: 0.5em;
+}
+
+.letra_grd {
+  font-size: 6.4em;
 }
 
 .letra_mediana {
   font-size: 2em;
 }
 
-.letra_chica {
-  font-size: 1.8em;
+.letra_resaltada {
+  font-size: 26px;
+}
+
+.letra_titulos {
+  font-size: 30px;
+  line-height: 100%;
 }
 
 .marcaItaliana {
@@ -123,39 +177,43 @@ a {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
+  height: 30px;
+  font-weight: normal;
   width: 270px;
 }
 
 .marginArriba {
-  margin-top: 15em;
+  margin-top: 18em;
+}
+
+.marginArriba_1 {
+  margin-top: 2em;
+}
+
+.menos_margin_1 {
+  margin-top: -5px;
 }
 
 #menu {
-  width: 80%;
+  width: 99%;
 }
 
 #menu li {
   display: inline-block;
 }
 
-#menu li a {
-  color: #c6cfd3;
-  display: inline-block;
-  font-weight: bold;
-  padding: 0.5em;
-  -webkit-transition: all 0.4s linear;
-  transition: all 0.4s linear;
+.menuProductos {
+  margin-top: 12.8em;
 }
 
-#menu li a span {
-  color: #f2c312;
+.menuProductos p {
+  width: 99%;
+  font-size: 11px;
+  padding: 0.1em 0;
 }
 
-#menu li a:hover {
-  -webkit-transform: scale(1.1, 1.1);
-  -ms-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1);
-  color: #dbe1e3;
+.menuProductos p a {
+  font-size: 22px;
 }
 
 .mi_alineacion {
@@ -181,12 +239,20 @@ a {
   line-height: 0%;
 }
 
+.subeMargen {
+  margin-top: -10px;
+}
+
 .texto_al_centro {
   text-align: center;
 }
 
 .tipos_amarillo {
   color: #f2c312;
+}
+
+.tipo_gris {
+  color: #c6cfd3;
 }
 
 .tipos_azul {
@@ -201,19 +267,23 @@ a {
   max-width: 320px;
 }
 
-.contenedorHexa {
-  background: url("../img/hexagono_grd_amarillo_UPB_poliuretano.png") center no-repeat;
+.contenedorHexa,
+.contenedorHexaNegro {
   height: 507px;
   margin-bottom: 20em;
   width: 449px;
 }
 
-.flechaArriba {
-  padding-top: 2em;
+.contenedorHexa {
+  background: url("../img/hexagono_grd_amarillo_UPB_poliuretano.png") center no-repeat;
 }
 
-.anchoTextoHexa {
-  height: 300px;
+.contenedorHexaNegro {
+  background: url("../img/hexagono_grd_azul_UPB_resinas.png") center no-repeat;
+}
+
+.flechaArriba {
+  padding-top: 1.8em;
 }
 
 @media (min-width: 1200px) {
@@ -230,11 +300,6 @@ a {
 
   .tituloPoliu {
     display: inline-block;
-  }
-
-  #trianguloAbajo {
-    background: url("../img/trianguloAmarillo_UPB.png") center no-repeat;
-    min-height: 180px;
   }
 
   .alVeinte {

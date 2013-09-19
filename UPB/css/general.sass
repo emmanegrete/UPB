@@ -3,6 +3,9 @@
 $amarillo: #f2c312
 $azlMarino: #3e527b
 $cajas_alineadas: inline-block
+$padd_6_2: 8.6em
+$padd_6_1: 8.4em
+$padd_6_1: 8.2em
 $padd_6: 8em
 $padd_5_2: 6.6em
 $padd_5_2: 6.4em
@@ -14,19 +17,33 @@ $padd_3_1: 3em
 $padd_3_3: 2.6em
 $padd_3: 2em
 $padd_2: 1.8em
+$padd_1_6: 1.6em
+$padd_1_4: 1.6em
+$padd_1_3: 1.4em
+$padd_1_2: 1.2em
 $padd_1_1: 1em
 $padd_1: 0.5em
 $gris: #c6cfd3
 
-%triangulote
-  background: url('../img/trianguloAmarillo_UPB.png') center no-repeat
-  min-height: 180px
+%botonesGrices
+  color: $gris
+  display: $cajas_alineadas
+  padding: $padd_1 $padd_1_1
+  +transition(all .4s linear)
+  span
+    color: $amarillo
+    font-weight: bold
+    font-size: $padd_1_1
+  &:hover
+    +scale(1.1)
+    color: scale-lightness($gris, 37%)
 
 body
   background: url(../img/background.png)
   font-family: 'Ubuntu', sans-serif
   font-size: 10px
-  line-height: 200%
+  line-height: 150%
+  font-weight: lighter
 
 footer
   bottom: 0
@@ -37,6 +54,9 @@ a
 .anchoTitulo
   max-width: 650px
   height: 150px
+
+.anchoTextoHexa
+  height: 310px
 
 .alVeinte
   width: 99.8%
@@ -64,7 +84,7 @@ a
   text-align: right
 
 .distribuidores
-  font-size: $padd_3_3
+  font-size: $padd_3_1
 
 .cajaTPU
   font-size: 16px
@@ -77,10 +97,20 @@ a
   margin: 0 auto
 
 .color
-  border: 1px solid red
+  border: 1px solid transparent
 
 .contenedorPrincipal
   background: url('../img/inicio-UPB-poliuretanos-resinas-pigmentos-procesos-industriales.png')  top center no-repeat
+
+.contenedorAcerca
+  background: url('../img/acerca-UPB-poliuretanos-resinas-pigmentos-procesos-industriales.png')  top center no-repeat
+
+.contenedorProductos
+  background: url('../img/productos-UPB-poliuretanos-resinas-pigmentos-procesos-industriales.png')  top center no-repeat
+
+
+.con_line_height
+  line-height: 120%
 
 .galeria
   width: 250px
@@ -89,46 +119,66 @@ a
 
 .italiaMexico
   width: 250px
-  font-size: $padd_3
+  font-size: $padd_2
   color: $gris
   span
     color: $amarillo
 
+.letra_chica
+  font-size: $padd_2
+
+.letra_mini_1
+  font-size: $padd_1_6
+
+.letra_mini
+  font-size: $padd_1
+
 .letra_grd
   font-size: $padd_5_2
-
-.letra_titulos
-  font-size: 26px
 
 .letra_mediana
   font-size: $padd_3
 
-.letra_chica
-  font-size: $padd_2
+.letra_resaltada
+  font-size: 26px
+
+.letra_titulos
+  font-size: 30px
+  line-height: 100%
 
 .marcaItaliana
   background-color: $amarillo
   +border-radius(5px)
+  height: 30px
+  font-weight: normal
   width: 270px
 
 .marginArriba
-  margin-top: 15em
+  margin-top: 18em
+
+.marginArriba_1
+  margin-top: 2em
+
+.menos_margin_1
+  margin-top: -5px
 
 #menu
-  width: 80%
+  width: 99%
   li
     display: $cajas_alineadas
   li a
-    color: $gris
-    display: $cajas_alineadas
-    font-weight: bold
-    padding: $padd_1
-    +transition(all .4s linear)
-    span
-      color: $amarillo
-    &:hover
-      +scale(1.1)
-      color: scale-lightness($gris, 37%)
+    @extend %botonesGrices
+
+
+.menuProductos
+  margin-top: $padd_5_2*2
+  p
+    width: 99%
+    font-size: 11px
+    padding: 0.1em 0
+  p a
+    @extend %botonesGrices
+    font-size: 22px
 
 .mi_alineacion
   display: $cajas_alineadas
@@ -148,11 +198,17 @@ a
 .sinLine
   line-height: 0%
 
+.subeMargen
+  margin-top: -10px
+
 .texto_al_centro
   text-align: center
 
 .tipos_amarillo
   color: $amarillo
+
+.tipo_gris
+  color: $gris
 
 .tipos_azul
   color: $azlMarino
@@ -165,18 +221,22 @@ a
 
 //Acerca de
 
-
-.contenedorHexa
-  background: url('../img/hexagono_grd_amarillo_UPB_poliuretano.png') center no-repeat
+.contenedorHexa, .contenedorHexaNegro
   height: 507px
   margin-bottom: 20em
   width: 449px
 
-.flechaArriba
-  padding-top: $padd_3
+.contenedorHexa
+  background: url('../img/hexagono_grd_amarillo_UPB_poliuretano.png') center no-repeat
 
-.anchoTextoHexa
-  height: 300px
+.contenedorHexaNegro
+  background: url('../img/hexagono_grd_azul_UPB_resinas.png') center no-repeat
+  
+
+.flechaArriba
+  padding-top: $padd_2
+
+
 
 @media (min-width: 1200px)
   .cajaTPU
@@ -190,10 +250,6 @@ a
 
   .tituloPoliu
     display: inline-block
-
-  #trianguloAbajo
-    background: url('../img/trianguloAmarillo_UPB.png') center no-repeat
-    min-height: 180px
 
   .alVeinte
     width: 19%
@@ -246,3 +302,5 @@ a
     width: 99%
 
 @media (min-width: 451px) and (max-width: 767px)
+
+

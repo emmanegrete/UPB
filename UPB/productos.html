@@ -8,20 +8,79 @@
     <link href='css/normalize.css' rel='stylesheet'>
     <link href='/favicon.ico' rel='shortcut icon'>
     <link href='css/general.css' rel='stylesheet'>
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:500,700' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,700' rel='stylesheet'>
   </head>
   <body>
-    <div class='contenedorPrincipal color'>
+    <div class='contenedorProductos color'>
       <nav class='texto_al_centro centrado color marginArriba' id='menu'>
-        <div class='centrado color contenedorHexa'>
-          <div class='alCien color flechaArriba mi_alineacion texto_al_centro'>
-            <img alt='anterior' src='img/flecha_arriba.png'>
-          </div>
-          <div class='alCien color flechaArriba mi_alineacion texto_al_centro'>
-            <img alt='siguiente' src='img/flecha_abajo.png'>
+        <ul>
+          <li class='color'>
+            <a class='letra_mini_1' href='index.html' title='UPB Home'>
+              <span>[</span>
+              INICIO
+              <span>]</span>
+            </a>
+          </li>
+          <li class='color'>
+            <a class='letra_mini_1' href='productos.html' title='Productos y servicios'>
+              <span>[</span>
+              PRODUCTOS Y SERVICIOS
+              <span>]</span>
+            </a>
+          </li>
+          <li>
+            <a class='color letra_mini_1' href='acerca.html' title='Acerca de UPB'>
+              <span>[</span>
+              ACERCA DE UPB
+              <span>]</span>
+            </a>
+          </li>
+          <li>
+            <a class='letra_mini_1' href='#Contacto' title='Contacto UPB'>
+              <span>[</span>
+              CONTACTO
+              <span>]</span>
+            </a>
+          </li>
+          <li>
+            <a class='letra_mini_1' href='#Ubicacion' title='Ubicación UPB'>
+              <span>[</span>
+              UBICACIÓN
+              <span>]</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <section class='alCien color cambioAjax'>
+        <div class='centrado color contenedorHexaNegro'>
+          <div class='alCien color mi_alineacion texto_al_centro menuProductos sinLine'>
+            <p>
+              <a class='negrita' href='#' title='TPU LARIPUR'>
+                <span>[</span>TPU<span>]</span>LARIPUR
+              </a>
+              <p class='tipo_gris'>POLIURETANO TERMOPLÁSTICO</p>
+            </p>
+            <p>
+              <a class='negrita' href='#' title='TPU UREXTER'>
+                <span>[</span>PUR<span>]</span>UREXTER
+              </a>
+              <p class='tipo_gris'>POLIURETANO VACIADO</p>
+            </p>
+            <p>
+              <a class='negrita' href='#' title='TONER/ACABADOS/MB'>
+                <span>[</span>TONER/ACABADOS/MB<span>]</span>
+              </a>
+              <p class='tipo_gris'>PARA RESINAS PLÁSTICAS</p>
+            </p>
+            <p>
+              <a class='negrita' href='#' title='ABS/PVC/TR'>
+                <span>[</span>ABS/PVC/TR<span>]</span>
+              </a>
+              <p class='tipo_gris'>PLÁSTICOS DE INGENIERIA</p>
+            </p>
           </div>
         </div>
-      </nav>
+      </section>
     </div>
     <script src='js/jquery.js'></script>
     <script src='js/modernizr.js'></script>

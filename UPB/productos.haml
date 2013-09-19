@@ -8,15 +8,55 @@
     %link{:rel => "stylesheet", :href => "css/normalize.css"}/
     %link{:href => "/favicon.ico", :rel => "shortcut icon"}/ 
     %link{:rel => "stylesheet", :href => "css/general.css"}/ 
-    %link{:rel => "stylesheet", :href => "http://fonts.googleapis.com/css?family=Ubuntu:500,700"}/
+    %link{:rel => "stylesheet", :href => "http://fonts.googleapis.com/css?family=Ubuntu:400,300,700"}/
   %body
-    .contenedorPrincipal.color
+    .contenedorProductos.color
       %nav#menu.texto_al_centro.centrado.color.marginArriba
-        .centrado.color.contenedorHexa
-          .alCien.color.flechaArriba.mi_alineacion.texto_al_centro
-            %img{:src => "img/flecha_arriba.png", :alt => "anterior"}/
-          .alCien.color.flechaArriba.mi_alineacion.texto_al_centro
-            %img{:src => "img/flecha_abajo.png", :alt => "siguiente"}/    
+        %ul
+          %li.color
+            %a.letra_mini_1{:title => "UPB Home", :href => "index.html"}  
+              %span [ 
+              INICIO 
+              %span ]
+          %li.color 
+            %a.letra_mini_1{:title => "Productos y servicios", :href => "productos.html"}  
+              %span [
+              PRODUCTOS Y SERVICIOS
+              %span ]
+          %li
+            %a.color.letra_mini_1{:title =>"Acerca de UPB", :href => "acerca.html"}   
+              %span [
+              ACERCA DE UPB
+              %span ]
+          %li
+            %a.letra_mini_1{:title =>"Contacto UPB", :href => "#Contacto"}   
+              %span [
+              CONTACTO
+              %span ]
+          %li 
+            %a.letra_mini_1{:title =>"Ubicación UPB", :href => "#Ubicacion"}  
+              %span [
+              UBICACIÓN
+              %span ]
+      %section.alCien.color.cambioAjax
+        .centrado.color.contenedorHexaNegro
+          .alCien.color.mi_alineacion.texto_al_centro.menuProductos.sinLine
+            %p 
+              %a.negrita{title: "TPU LARIPUR", href: "#"}
+                <span>[</span>TPU<span>]</span>LARIPUR
+              %p.tipo_gris  POLIURETANO TERMOPLÁSTICO
+            %p 
+              %a.negrita{title:"TPU UREXTER", href:"#"}
+                <span>[</span>PUR<span>]</span>UREXTER
+              %p.tipo_gris  POLIURETANO VACIADO       
+            %p 
+              %a.negrita{title:"TONER/ACABADOS/MB", href:"#"}
+                <span>[</span>TONER/ACABADOS/MB<span>]</span>
+              %p.tipo_gris PARA RESINAS PLÁSTICAS       
+            %p 
+              %a.negrita{title:"ABS/PVC/TR", href:"#"}
+                <span>[</span>ABS/PVC/TR<span>]</span>
+              %p.tipo_gris  PLÁSTICOS DE INGENIERIA      
     
     %script{:src => "js/jquery.js"}
     %script{:src => "js/modernizr.js"}
@@ -24,5 +64,5 @@
     %script{:src => "js/jquery.easing.1.3.js"}
     %script{:src => "js/jquery.mousewheel.js"} 
     %script{:src => "js/general.js"}  
-		
-	
+    
+  
