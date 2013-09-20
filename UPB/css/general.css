@@ -108,7 +108,7 @@ a {
 }
 
 .color {
-  border: 1px solid transparent;
+  border: 1px solid red;
 }
 
 .contenedorPrincipal {
@@ -190,6 +190,10 @@ a {
   margin-top: 2em;
 }
 
+.marginArriba_2 {
+  margin-top: 4em;
+}
+
 .menos_margin_1 {
   margin-top: -5px;
 }
@@ -220,6 +224,12 @@ a {
   display: inline-block;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.minimo_imagen {
+  width: 90%;
+  min-width: 240px;
+  max-width: 620px;
 }
 
 .negrita {

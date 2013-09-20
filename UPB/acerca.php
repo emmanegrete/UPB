@@ -1,4 +1,6 @@
-
+<?php 
+  include "cabeza.php"
+?>
       <section class='alCien color cambioAjax'>
         <div class='centrado color contenedorHexa'>
           <div class='alCien color flechaArriba mi_alineacion texto_al_centro'>
@@ -48,3 +50,6 @@
         </div>
       </section>
       <script src='js/jquery.js'></script>
+<?php 
+  include "pies.php"
+?>

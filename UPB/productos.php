@@ -1,4 +1,6 @@
-
+<?php 
+  include "cabeza.php"
+?>
       <section class='alCien color cambioAjax'>
         <div class='centrado color contenedorHexaNegro'>
           <div class='alCien color mi_alineacion texto_al_centro menuProductos sinLine'>
@@ -31,3 +33,6 @@
       </section>
       <script src='js/jquery.js'></script>
     </div>
+<?php 
+  include "pies.php"
+?>

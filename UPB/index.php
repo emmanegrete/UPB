@@ -1,5 +1,7 @@
-
-      <section class='alCien color cambioAjax texto_al_centro'>
+<?php 
+  include "cabeza.php"
+?>
+      <section class='alCien color cambioAjax texto_al_centro marginArriba_2'>
         <img class="minimo_imagen" src="img/titulo_TPU.png" alt="">
         <!--
         <section class='anchoTitulo centrado color'>
@@ -45,7 +47,7 @@
         </section>
       -->
         <section class='alCien centrado'>
-          <div class='galeria color centrado marginArriba_2'>
+          <div class='galeria color centrado marginArriba_1'>
             <ul class='slide centrado'>
               <li>
                 <img alt='TPU Poliuretano' src='img/hexagonos_TPU_1.png'>
@@ -70,3 +72,6 @@
         </section>
       </section>
     <script src='js/jquery.js'></script>
+<?php 
+  include "pies.php"
+?>
